@@ -1,0 +1,15 @@
+{
+  "name": "eslint-config-wolox",
+  "version": "1.0.0",
+  "description": "ESLint configuration used by Wolox",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wolox/eslint-config-wolox.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wolox/eslint-config-wolox/issues"
+  },
+  "homepage": "https://github.com/Wolox/eslint-config-wolox#readme"
+}
