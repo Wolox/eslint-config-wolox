@@ -1,2 +1,3 @@
 # eslint-config-wolox
-Wolox eslint standard
+
+Wolox eslint standard rules.
