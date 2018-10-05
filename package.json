@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-wolox",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "ESLint configuration used by Wolox",
   "main": "index.js",
   "repository": {

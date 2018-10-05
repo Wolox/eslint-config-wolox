@@ -40,7 +40,15 @@ module.exports = {
     "no-empty-character-class": "error",
     "no-ex-assign": "error",
     "no-extra-boolean-cast": "error",
-    "no-extra-parens": "error",
+    "no-extra-parens": [
+      "error",
+      "all",
+      {
+        ignoreJSX: "all",
+        enforceForArrowConditionals: false,
+        returnAssign: false
+      }
+    ],
     "no-extra-semi": "error",
     "no-func-assign": "error",
     "no-inner-declarations": "error",
@@ -65,11 +73,10 @@ module.exports = {
     "array-callback-return": "error",
     "block-scoped-var": "error",
     "class-methods-use-this": "error",
-    complexity: ["error", 6],
+    complexity: ["error", 10],
     "consistent-return": "error",
     curly: ["error", "all"], // NOTE: Node multi: "error"
     "default-case": "error",
-    "dot-location": "error",
     "dot-notation": "error",
     eqeqeq: "error",
     "guard-for-in": "error",
@@ -121,7 +128,6 @@ module.exports = {
     "no-with": "error",
     "prefer-promise-reject-errors": "error",
     "require-await": "error",
-    "require-unicode-regexp": "error",
     "vars-on-top": "error",
     yoda: "error",
 
@@ -131,7 +137,6 @@ module.exports = {
     "no-shadow": "error",
     "no-shadow-restricted-names": "error",
     "no-undef": "error",
-    "no-undefined": "error",
     "no-unused-vars": "error",
     "no-use-before-define": "error",
 
@@ -150,9 +155,8 @@ module.exports = {
     "func-name-matching": "error",
     "func-names": "error",
     "id-length": ["error", { min: 1, max: 30 }],
-    "implicit-arrow-linebreak": "error",
-    indent: ["error", 2],
-    "jsx-quotes": "error",
+    indent: ["error", 2, { SwitchCase: 1 }],
+    "jsx-quotes": ["error", "prefer-double"],
     "key-spacing": "error",
     "keyword-spacing": "error",
     "line-comment-position": "error",
@@ -188,7 +192,11 @@ module.exports = {
       { allowAllPropertiesOnSameLine: true }
     ],
     "one-var-declaration-per-line": "error", // Check spaces for Node
-    "operator-linebreak": ["error", "after"],
+    "operator-linebreak": [
+      "error",
+      "after",
+      { overrides: { "?": "before", ":": "before" } }
+    ],
     "padded-blocks": ["error", "never"],
     "padding-line-between-statements": [
       "error",
@@ -202,11 +210,10 @@ module.exports = {
     ], // Newline before `return` and after variable declarations
     "prefer-object-spread": "error",
     "quote-props": ["error", "as-needed"],
-    quotes: ["error", "single"],
+    quotes: ["error", "single", { avoidEscape: true }],
     semi: "error",
     "semi-spacing": ["error", { before: false, after: true }],
     "semi-style": "error",
-    "sort-keys": "error",
     "space-before-blocks": "error",
     "keyword-spacing": "error",
     "space-in-parens": "error",
@@ -216,14 +223,13 @@ module.exports = {
     "switch-colon-spacing": "error",
     "template-tag-spacing": "error",
     "unicode-bom": "error",
-    "wrap-regex": "error",
 
     // Eslint ECMASCRIPT 6 - https://eslint.org/docs/rules/#ecmascript-6
     "arrow-body-style": "error",
     "constructor-super": "error",
     "generator-star-spacing": "error",
     "no-class-assign": "error",
-    "no-confusing-arrow": "error",
+    "no-confusing-arrow": "off", // conflicts with prettier
     "no-const-assign": "error",
     "no-dupe-class-members": "error",
     "no-duplicate-imports": "error",
@@ -243,7 +249,6 @@ module.exports = {
     "prefer-template": "error",
     "require-yield": "error",
     "rest-spread-spacing": "error",
-    "sort-imports": "error",
     "symbol-description": "error",
     "template-curly-spacing": "error",
     "yield-star-spacing": "error"
