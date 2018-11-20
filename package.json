@@ -11,8 +11,8 @@
   "bugs": {
     "url": "https://github.com/Wolox/eslint-config-wolox/issues"
   },
-  "devDependencies": {
-    "eslint": "^5.9.0"
+  "peerDependencies": {
+    "eslint": "5.9.0"
   },
   "homepage": "https://github.com/Wolox/eslint-config-wolox#readme"
 }
