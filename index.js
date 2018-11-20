@@ -14,14 +14,10 @@ module.exports = {
     },
     sourceType: "module"
   },
-  plugins: ["prettier"],
   globals: {
     __DEV__: true
   },
   rules: {
-    // Prettier
-    "prettier/prettier": ["error", { printWidth: 110, singleQuote: true }],
-
     // Eslint Possible Errors - https://eslint.org/docs/rules/#possible-errors
     "for-direction": "error",
     "getter-return": "error",
@@ -196,16 +192,6 @@ module.exports = {
       { overrides: { "?": "before", ":": "before" } }
     ],
     "padded-blocks": ["error", "never"],
-    "padding-line-between-statements": [
-      "error",
-      { blankLine: "always", prev: "*", next: "return" },
-      { blankLine: "always", prev: ["const", "let", "var"], next: "*" },
-      {
-        blankLine: "any",
-        prev: ["const", "let", "var"],
-        next: ["const", "let", "var"]
-      }
-    ], // Newline before `return` and after variable declarations
     "prefer-object-spread": "error",
     "quote-props": ["error", "as-needed"],
     quotes: ["error", "single", { avoidEscape: true }],
