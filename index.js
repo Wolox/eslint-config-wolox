@@ -6,8 +6,8 @@ module.exports = {
     node: true,
     browser: true
   },
-  parser: "babel-eslint",
   parserOptions: {
+    parser: "babel-eslint",
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
       jsx: true
