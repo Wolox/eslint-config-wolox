@@ -9,16 +9,20 @@ module.exports = {
   },
   parserOptions: {
     parser: "babel-eslint",
-    "ecmaVersion": 10,
+    ecmaVersion: 10,
     ecmaFeatures: {
       jsx: true
     },
     sourceType: "module"
   },
+  plugins: ["prettier"],
   globals: {
     __DEV__: true
   },
   rules: {
+    // Prettier
+    "prettier/prettier": ["error", { printWidth: 110, singleQuote: true }],
+
     // Eslint Possible Errors - https://eslint.org/docs/rules/#possible-errors
     "for-direction": "error",
     "getter-return": "error",
