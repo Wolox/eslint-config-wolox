@@ -9,16 +9,20 @@ module.exports = {
   },
   parserOptions: {
     parser: "babel-eslint",
-    "ecmaVersion": 10,
+    ecmaVersion: 10,
     ecmaFeatures: {
       jsx: true
     },
     sourceType: "module"
   },
+  plugins: ["prettier"],
   globals: {
     __DEV__: true
   },
   rules: {
+    // Prettier
+    "prettier/prettier": ["error", { printWidth: 110, singleQuote: true }],
+
     // Eslint Possible Errors - https://eslint.org/docs/rules/#possible-errors
     "for-direction": "error",
     "getter-return": "error",
@@ -99,7 +103,10 @@ module.exports = {
     "no-labels": "error",
     "no-lone-blocks": "error",
     "no-loop-func": "error",
-    "no-magic-numbers": ["error", { ignore: [0, 1], enforceConst: true }],
+    "no-magic-numbers": [
+      "error",
+      { ignore: [0, 1, -1, 2], enforceConst: true }
+    ],
     "no-multi-spaces": "error",
     "no-new": "error",
     "no-new-func": "error",
@@ -160,7 +167,7 @@ module.exports = {
     "lines-between-class-members": "error",
     "max-depth": "error",
     "max-lines": "error", // NOTE: Disable Node
-    "max-nested-callbacks": ["error", { max: 2 }],
+    "max-nested-callbacks": ["error", { max: 3 }],
     "max-params": ["error", { max: 4 }],
     "max-statements": ["error", { max: 30 }],
     "max-statements-per-line": "error",
