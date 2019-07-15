@@ -74,12 +74,12 @@ module.exports = {
     "array-callback-return": "error",
     "block-scoped-var": "error",
     "class-methods-use-this": "error",
-    complexity: ["error", 10],
+    "complexity": ["error", 10],
     "consistent-return": "error",
-    curly: ["error", "all"], // NOTE: Node multi: "error"
+    "curly": ["error", "all"],
     "default-case": "error",
     "dot-notation": "error",
-    eqeqeq: "error",
+    "eqeqeq": "error",
     "guard-for-in": "error",
     "max-classes-per-file": ["error", 1],
     "no-alert": "error",
@@ -133,7 +133,7 @@ module.exports = {
     "prefer-promise-reject-errors": "error",
     "require-await": "error",
     "vars-on-top": "error",
-    yoda: "error",
+    "yoda": "error",
 
     // Eslint Variables - https://eslint.org/docs/rules/#variables
     "init-declarations": "error",
@@ -148,7 +148,7 @@ module.exports = {
     "array-bracket-spacing": "error",
     "block-spacing": "error",
     "brace-style": "error",
-    camelcase: "error",
+    "camelcase": "error",
     "comma-dangle": "error",
     "comma-spacing": "error",
     "comma-style": "error",
@@ -158,7 +158,7 @@ module.exports = {
     "func-name-matching": "error",
     "func-names": "error",
     "id-length": ["error", { min: 1, max: 30 }],
-    indent: ["error", 2, { SwitchCase: 1 }],
+    "indent": ["error", 2, { SwitchCase: 1 }],
     "jsx-quotes": ["error", "prefer-double"],
     "key-spacing": "error",
     "keyword-spacing": "error",
@@ -166,7 +166,7 @@ module.exports = {
     "linebreak-style": "error",
     "lines-between-class-members": "error",
     "max-depth": "error",
-    "max-lines": "error", // NOTE: Disable Node
+    "max-lines": "error",
     "max-nested-callbacks": ["error", { max: 3 }],
     "max-params": ["error", { max: 4 }],
     "max-statements": ["error", { max: 30 }],
@@ -193,7 +193,7 @@ module.exports = {
       "error",
       { allowAllPropertiesOnSameLine: true }
     ],
-    "one-var-declaration-per-line": "error", // Check spaces for Node
+    "one-var-declaration-per-line": "error",
     "operator-linebreak": [
       "error",
       "after",
@@ -202,8 +202,8 @@ module.exports = {
     "padded-blocks": ["error", "never"],
     "prefer-object-spread": "error",
     "quote-props": ["error", "as-needed"],
-    quotes: ["error", "single", { avoidEscape: true }],
-    semi: "error",
+    "quotes": ["error", "single", { avoidEscape: true }],
+    "semi": "error",
     "semi-spacing": ["error", { before: false, after: true }],
     "semi-style": "error",
     "space-before-blocks": "error",
