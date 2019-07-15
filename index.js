@@ -15,13 +15,21 @@ module.exports = {
     },
     sourceType: "module"
   },
-  plugins: ["prettier"],
+  plugins: ["prettier", "import"],
   globals: {
     __DEV__: true
   },
   rules: {
     // Prettier
     "prettier/prettier": ["error", { printWidth: 110, singleQuote: true }],
+
+    // Import
+    "import/order": ["error", { groups: [["builtin", "external", "internal"]] }],
+    "import/named": "error",
+    "import/no-duplicates": "error",
+    "import/newline-after-import": "error",
+    "import/no-cycle": ["error", { maxDepth: Infinity }],
+    "import/no-useless-path-segments": "error",
 
     // Eslint Possible Errors - https://eslint.org/docs/rules/#possible-errors
     "for-direction": "error",

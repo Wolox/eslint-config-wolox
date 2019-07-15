@@ -1,6 +1,7 @@
 # eslint-config-wolox
 
-Wolox eslint standard rules.
+Wolox eslint standard rules.  
+It uses [prettier](https://github.com/prettier/eslint-plugin-prettier) and [plugin import](https://github.com/benmosher/eslint-plugin-import) to define some rules.
 
 ## Contributing
 
