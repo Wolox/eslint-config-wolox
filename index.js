@@ -156,7 +156,7 @@ module.exports = {
     "array-bracket-spacing": "error",
     "block-spacing": "error",
     "brace-style": "error",
-    camelcase: ["error", { allow: ["^.*_plural$"] }],
+    "camelcase": ["error", { allow: ["^.*_plural$"] }],
     "comma-dangle": "error",
     "comma-spacing": "error",
     "comma-style": "error",
