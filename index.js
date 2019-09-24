@@ -166,7 +166,7 @@ module.exports = {
     "func-name-matching": "error",
     "func-names": "error",
     "id-length": ["error", { min: 1, max: 30 }],
-    "indent": ["error", 2, { SwitchCase: 1 }],
+    "indent": ["error", 2, { SwitchCase: 1, "ignoredNodes": ["ObjectExpression"] }],
     "jsx-quotes": ["error", "prefer-double"],
     "key-spacing": "error",
     "keyword-spacing": "error",
