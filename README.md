@@ -1,5 +1,7 @@
 # eslint-config-wolox
 
+**Note**: This package has been deprecated in favor of [@wolox/eslint-config](https://github.com/Wolox/eslint-config)
+
 Wolox eslint standard rules.  
 It uses [prettier](https://github.com/prettier/eslint-plugin-prettier) and [plugin import](https://github.com/benmosher/eslint-plugin-import) to define some rules.
 
