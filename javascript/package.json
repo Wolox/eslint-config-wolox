@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-wolox",
-  "version": "4.0.0",
-  "description": "ESLint configuration used by Wolox",
+  "name": "@eslint-config-wolox/javascript",
+  "version": "1.0.0",
+  "description": "Wolox's ESLint Javascript configuration",
   "main": "index.js",
   "repository": {
     "type": "git",
