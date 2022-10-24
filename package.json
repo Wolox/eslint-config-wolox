@@ -12,7 +12,7 @@
     "url": "https://github.com/Wolox/eslint-config-wolox/issues"
   },
   "peerDependencies": {
-    "eslint": "6.x",
+    "eslint": "8.x",
     "prettier": "1.x",
     "prettier-eslint": "9.x",
     "eslint-plugin-prettier": "3.x",
